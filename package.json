@@ -1,9 +1,11 @@
 {
   "name": "somali-battle-bot",
   "version": "1.0.0",
+  "description": "Somali Battle Discord Bot",
   "type": "module",
+  "main": "index.js",
   "scripts": {
-    "start": "node dist/index.mjs"
+    "start": "node index.js"
   },
   "engines": {
     "node": ">=18"
