@@ -1,10 +1,11 @@
 import { createRequire as __bannerCrReq } from 'node:module';
 import __bannerPath from 'node:path';
 import __bannerUrl from 'node:url';
+
 globalThis.require = __bannerCrReq(import.meta.url);
 globalThis.__filename = __bannerUrl.fileURLToPath(import.meta.url);
 globalThis.__dirname = __bannerPath.dirname(globalThis.__filename);
-
+    
 var __getOwnPropNames = Object.getOwnPropertyNames;
 var __require = /* @__PURE__ */ ((x) => typeof require !== "undefined" ? require : typeof Proxy !== "undefined" ? new Proxy(x, {
   get: (a, b) => (typeof require !== "undefined" ? require : a)[b]
@@ -224,3 +225,4 @@ process.once("exit", (exitCode) => {
   }
   process.exit(0);
 });
+//# sourceMappingURL=thread-stream-worker.js.map
